@@ -83,7 +83,7 @@ export default function Blog() {
                   {post.coverImage && (
                     <img src={post.coverImage} alt={post.title} className="rounded-lg mb-4 w-full object-cover max-h-48 " />
                   )}
-                  <span className="text-xs uppercase text-primary font-semibold mb-2">{post.category || 'General'}</span>
+                  <span className="text-xs uppercase text-primary font-semibold mb-2">{post.tags || 'General'}</span>
                   <h2 className="text-xl font-bold mb-2 line-clamp-2 theme === 'dark' ? 'text-white' : 'text-black'">{post.title}</h2>
                   <p className="text-muted-foreground mb-4 line-clamp-3">{post.excerpt || post.content.slice(0, 120) + '...'}</p>
                   <div className="flex items-center gap-2 text-sm text-muted-foreground mt-auto">
