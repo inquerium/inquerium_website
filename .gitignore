@@ -1,0 +1,36 @@
+# Node modules and build output
+node_modules/
+build/
+dist/
+.next/
+out/
+.vite/
+coverage/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# OS and editor files
+.DS_Store
+*.pem
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Vercel/Netlify/Render/other deploy configs
+.vercel
+.netlify
+render.yaml
+
+# Prisma
+prisma/dev.db
+prisma/.env
+
+/generated/prisma
+
+oauth2_generate_tokens.cjs
+deploy-ec2.sh
