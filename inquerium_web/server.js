@@ -9,7 +9,7 @@ import bcrypt from 'bcryptjs';
 import morgan from 'morgan';
 import rateLimit from 'express-rate-limit';
 import cors from 'cors';
-import path from 'path';
+import path, { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 
 dotenv.config();
@@ -446,8 +446,9 @@ app.post('/api/admin/login', async (req, res) => {
 // Serve static frontend in production
 if (process.env.NODE_ENV === 'production') {
   const __filename = fileURLToPath(import.meta.url);
-  const __dirname = path.dirname(__filename);
-  const distPath = path.join(__dirname, 'dist');
+  const __dirname = dirname(__filename);
+  const distPath = resolve(__dirname, 'dist');
+  console.log('Serving static from:', distPath);
   app.use(express.static(distPath));
   // SPA fallback for non-API routes
   app.get(/^\/(?!api).*/, (req, res) => {
