@@ -100,7 +100,10 @@ export default function Footer() {
                   team@inquerium.com
                 </a>
               </p>
-              <p>(979) 555-1234</p>
+              <h3 className="font-bold text-lg">Phone</h3>
+                    <a href="tel:+12146744198" className="text-muted-foreground hover:text-primary transition-colors">
+                      (214) 674-4198
+                    </a>
             </address>
           </div>
         </div>
