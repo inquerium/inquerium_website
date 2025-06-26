@@ -13,39 +13,39 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <img src="/placeholder.svg?height=32&width=32" alt="Inquerium Logo" className="h-8 w-8 rounded" />
+              {/*<img src="/placeholder.svg?height=32&width=32" alt="Inquerium Logo" className="h-8 w-8 rounded" />*/}
               <span className="text-xl font-bold">Inquerium</span>
             </div>
             <p className="text-muted-foreground">
               Transforming lead generation through innovative strategies and top talent.
             </p>
             <div className="flex space-x-4">
-              <motion.a
-                href="#"
-                whileHover={{ y: -3 }}
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Twitter size={20} />
+                {/*<Twitter size={20} />
                 <span className="sr-only">Twitter</span>
               </motion.a>
               <motion.a
                 href="#"
                 whileHover={{ y: -3 }}
                 className="text-muted-foreground hover:text-primary transition-colors"
+              >*/}
+              <motion.a
+                href="https://www.linkedin.com/feed/"
+                whileHover={{ y: -3 }}
+                className="text-muted-foreground hover:text-primary transition-colors"
               >
                 <Linkedin size={20} />
                 <span className="sr-only">LinkedIn</span>
+              </motion.a>
+                {/*<Facebook size={20} />
+                <span className="sr-only">Facebook</span>
               </motion.a>
               <motion.a
                 href="#"
                 whileHover={{ y: -3 }}
                 className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Facebook size={20} />
-                <span className="sr-only">Facebook</span>
-              </motion.a>
+              >*/}
               <motion.a
-                href="#"
+                href="https://www.instagram.com/inquerium/"
                 whileHover={{ y: -3 }}
                 className="text-muted-foreground hover:text-primary transition-colors"
               >

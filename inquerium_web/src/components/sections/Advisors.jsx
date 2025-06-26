@@ -31,7 +31,7 @@ export default function Advisors() {
         email: "mailto:robert@example.com",
       },
     },
-    {
+    /*{
       name: "Steven Bradford",
       role: "Industry Growth Advisor",
       image: Bradford,
@@ -41,7 +41,7 @@ export default function Advisors() {
         twitter: "#",
         email: "mailto:steven@example.com",
       },
-    },
+    },*/
   ]
 
   const containerVariants = {
@@ -83,7 +83,7 @@ export default function Advisors() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"
         >
           {advisors.map((advisor, index) => (
             <motion.div key={index} variants={itemVariants}>

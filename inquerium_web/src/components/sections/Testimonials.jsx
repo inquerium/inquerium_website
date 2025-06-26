@@ -17,13 +17,6 @@ export default function Testimonials() {
     },
     {
       quote:
-        "The team at Inquerium brings a level of expertise and creativity that's unmatched. They've become an essential extension of our marketing department.",
-      author: "Michael Chen",
-      company: "Horizon Financial"
-      //image: "/placeholder.svg?height=60&width=60",
-    },
-    {
-      quote:
         "Inquerium didn't just help us grow, they made the impossible possible. Their team connected us with our audience, built our digital presence from the ground up, and opened doors to manufacturers we never thought we'd reach. If you want to turn your vision into reality, Inquerium is the only partner you need.",
       author: "Carter Nelson",
       company: "Lonebull Usa"
