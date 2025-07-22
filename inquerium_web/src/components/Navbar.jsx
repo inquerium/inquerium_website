@@ -7,6 +7,7 @@ import { Button } from "./ui/button"
 import { Menu, X } from "lucide-react"
 import { useTheme } from "./theme-provider"
 import { Moon, Sun } from "lucide-react"
+import InqueriumLogo from "../assets/Inquerium_logo.png"
 
 const mainLinks = [
   { name: 'Home', to: '/' },
@@ -78,7 +79,7 @@ export default function Navbar() {
     <header className="fixed top-0 z-50 w-full bg-background/90 backdrop-blur-sm shadow-md transition-colors duration-300">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2">
-          {/*<img src="/placeholder.svg?height=32&width=32" alt="Inquerium Logo" className="h-8 w-8 rounded" />*/}
+          {InqueriumLogo}
           <span className="text-xl font-extrabold tracking-tight text-foreground">Inquerium</span>
         </Link>
         <nav className="hidden md:flex gap-6 items-center">
