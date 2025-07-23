@@ -79,8 +79,8 @@ export default function Navbar() {
     <header className="fixed top-0 z-50 w-full bg-background/90 backdrop-blur-sm shadow-md transition-colors duration-300">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2">
-          {InqueriumLogo}
-          <span className="text-xl font-extrabold tracking-tight text-foreground">Inquerium</span>
+          <img src={InqueriumLogo} alt="Inquerium Logo" className="h-10 w-auto" />
+          {/*<span className="text-xl font-extrabold tracking-tight text-foreground">Inquerium</span>*/}
         </Link>
         <nav className="hidden md:flex gap-6 items-center">
           {mainLinks.map(link => (
