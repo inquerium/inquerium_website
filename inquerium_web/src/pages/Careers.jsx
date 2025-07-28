@@ -66,22 +66,22 @@ export default function Careers() {
       <Navbar />
       <main className="flex-1">
         {/* Animated Gradient Header */}
-        <section className="relative py-24 md:py-32 flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#500000] via-primary/60 to-yellow-100">
+        <section className="relative py-24 md:py-32 flex items-center justify-center overflow-hidden bg-gradient-to-br from-brand-navy via-brand-blue/60 to-brand-sky/30">
           <div className="absolute inset-0 pointer-events-none">
             <svg width="100%" height="100%" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-full opacity-30 animate-pulse">
-              <path fill="#500000" fillOpacity="0.2" d="M0,160L60,170.7C120,181,240,203,360,197.3C480,192,600,160,720,133.3C840,107,960,85,1080,101.3C1200,117,1320,171,1380,197.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+              <path fill="#242D54" fillOpacity="0.2" d="M0,160L60,170.7C120,181,240,203,360,197.3C480,192,600,160,720,133.3C840,107,960,85,1080,101.3C1200,117,1320,171,1380,197.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
             </svg>
           </div>
           <div className="relative z-10 container mx-auto px-4 text-center">
             <div className="inline-block bg-white/80 rounded-2xl px-8 py-6 shadow-2xl backdrop-blur-md animate-fadeInUp">
-              <h1 className="text-5xl md:text-6xl font-extrabold text-[#500000] drop-shadow-lg mb-2 tracking-tight animate-gradient-x bg-gradient-to-r from-[#500000] via-primary to-yellow-600 bg-clip-text text-transparent">
+              <h1 className="text-5xl md:text-6xl font-extrabold text-brand-navy drop-shadow-lg mb-2 tracking-tight animate-gradient-x bg-gradient-to-r from-brand-navy via-brand-blue to-brand-sky bg-clip-text text-transparent font-header">
                 Build Your Career at Inquerium
               </h1>
               <div className="flex justify-center mt-2 mb-4">
-                <span className="block w-24 h-1 rounded-full bg-gradient-to-r from-[#500000] via-primary to-yellow-600 animate-pulse"></span>
+                <span className="block w-24 h-1 rounded-full bg-gradient-to-r from-brand-navy via-brand-blue to-brand-sky animate-pulse"></span>
               </div>
-              <p className="text-lg md:text-xl text-[#500000] font-medium max-w-2xl mx-auto animate-fadeIn delay-200">
-                Aggie-owned. Mission-driven. Join the team powering College Station's most innovative lead generation company.
+              <p className="text-lg md:text-xl text-brand-navy font-medium max-w-2xl mx-auto animate-fadeIn delay-200 font-body">
+                Aggie-owned. Mission-driven. Join the team powering College Station's most innovative logistics corporation.
               </p>
             </div>
             <div className="mt-10 flex justify-center animate-fadeInUp delay-300">
@@ -94,41 +94,41 @@ export default function Careers() {
           <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-start">
             <div className="space-y-8">
               {/* Aggie Card */}
-              <div className="bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-primary/20 text-center transition-transform hover:scale-[1.02] duration-300">
+              <div className="bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-brand-blue/20 text-center transition-transform hover:scale-[1.02] duration-300">
                 <img src={AggieRing} alt="Aggie Ring" className="rounded-lg mb-4 mx-auto w-48 shadow-md" />
-                <h2 className="text-2xl font-bold text-[#500000] flex items-center justify-center gap-2"><Sparkles className="text-yellow-500 animate-bounce" size={24}/> Aggie Owned and Operated</h2>
-                <p className="text-[#500000]/80">Our success is built on the talent and drive of the Aggie network.</p>
+                <h2 className="text-2xl font-bold text-brand-navy flex items-center justify-center gap-2 font-header"><Sparkles className="text-brand-sky animate-bounce" size={24}/> Aggie Owned and Operated</h2>
+                <p className="text-brand-navy/80 font-body">Our success is built on the talent and drive of the Aggie network in logistics and operations.</p>
               </div>
 
               {/* Job Positions */}
-              <div className="bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-primary/20">
-                <h2 className="text-2xl font-bold mb-4 text-[#500000]">Open Positions</h2>
+              <div className="bg-white/80 backdrop-blur-lg p-8 rounded-2xl shadow-2xl border border-brand-blue/20">
+                <h2 className="text-2xl font-bold mb-4 text-brand-navy font-header">Open Positions</h2>
                 <div className="space-y-8">
                   <div className="transition-transform hover:scale-[1.02] duration-300">
-                    <h3 className="text-xl font-semibold flex items-center gap-2 text-[#500000]"><User className="text-primary animate-fadeInUp" size={20}/> Technical Lead (Programmer)</h3>
-                    <p className="text-[#500000]/80 mt-1">
-                      Architect and build the core technologies that power our lead generation engine. You'll work with modern stacks, solve complex data problems, and mentor a team of talented developers. Ideal for those with a strong background in software engineering and a passion for innovation.
+                    <h3 className="text-xl font-semibold flex items-center gap-2 text-brand-navy font-header"><User className="text-brand-blue animate-fadeInUp" size={20}/> Technical Lead (Programmer)</h3>
+                    <p className="text-brand-navy/80 mt-1 font-body">
+                      Architect and build the core technologies that power our logistics operations and business partnerships. You'll work with modern stacks, solve complex supply chain problems, and mentor a team of talented developers. Ideal for those with a strong background in software engineering and a passion for operational efficiency.
                     </p>
                   </div>
                   <div className="transition-transform hover:scale-[1.02] duration-300">
-                    <h3 className="text-xl font-semibold flex items-center gap-2 text-[#500000]"><Briefcase className="text-primary animate-fadeInUp" size={20}/> Client Success Manager (Account Manager)</h3>
-                    <p className="text-[#500000]/80 mt-1">
-                      Serve as the strategic partner for our clients. You'll ensure they achieve their goals by leveraging our services, building lasting relationships, and identifying new opportunities for growth. Requires excellent communication skills and a deep understanding of client needs.
+                    <h3 className="text-xl font-semibold flex items-center gap-2 text-brand-navy font-header"><Briefcase className="text-brand-blue animate-fadeInUp" size={20}/> Client Success Manager (Account Manager)</h3>
+                    <p className="text-brand-navy/80 mt-1 font-body">
+                      Serve as the strategic partner for our logistics clients. You'll ensure they achieve operational excellence by leveraging our services, building lasting manufacturer relationships, creating new revenue streams, developing comprehensive strategies, and identifying new opportunities for cost optimization and growth. Requires excellent communication skills and a deep understanding of supply chain operations and business strategy.
                     </p>
                   </div>
                 </div>
               </div>
             </div>
             {/* Application Form */}
-            <div className="bg-white/90 backdrop-blur-lg p-10 rounded-2xl shadow-2xl border-2 border-primary/30 animate-fadeInUp">
-              <h2 className="text-2xl font-bold mb-6 text-[#500000]">Apply Now</h2>
+            <div className="bg-white/90 backdrop-blur-lg p-10 rounded-2xl shadow-2xl border-2 border-brand-blue/30 animate-fadeInUp">
+              <h2 className="text-2xl font-bold mb-6 text-brand-navy font-header">Apply Now</h2>
               <form onSubmit={handleSubmit} className="space-y-4">
                 <Input name="name" placeholder="Full Name" value={formData.name} onChange={handleInputChange} required />
                 <Input name="email" type="email" placeholder="Email Address" value={formData.email} onChange={handleInputChange} required />
                 <Input name="phone" placeholder="Phone Number" value={formData.phone} onChange={handleInputChange} />
                 <div className="flex items-center space-x-2 pt-2">
                   <input type="checkbox" name="isStudent" id="isStudent" checked={formData.isStudent} onChange={handleInputChange} className="h-4 w-4 rounded border-primary/50" />
-                  <label htmlFor="isStudent" className="text-sm font-medium text-[#500000]">Are you a Texas A&M student?</label>
+                  <label htmlFor="isStudent" className="text-sm font-medium text-brand-navy font-body">Are you a Texas A&M student?</label>
                 </div>
                 {formData.isStudent && (
                   <div className="space-y-4 p-4 border rounded-md bg-background/50 animate-in fade-in-0">
@@ -137,14 +137,14 @@ export default function Careers() {
                   </div>
                 )}
                 <div>
-                  <label htmlFor="position" className="text-sm font-medium block mb-1 text-[#500000]">Position Applying For</label>
+                  <label htmlFor="position" className="text-sm font-medium block mb-1 text-brand-navy font-body">Position Applying For</label>
                   <select name="position" id="position" value={formData.position} onChange={handleInputChange} className="w-full p-2 border rounded-md bg-background border-primary/30">
                     <option>Technical Lead (Programmer)</option>
                     <option>Client Success Manager (Account Manager)</option>
                   </select>
                 </div>
                 <Textarea name="message" placeholder="Why are you a great fit for Inquerium? Tell us about your relevant experience." value={formData.message} onChange={handleInputChange} required rows={5}/>
-                <Button type="submit" className="w-full bg-gradient-to-r from-[#500000] via-primary to-yellow-600 text-white font-bold shadow-lg hover:from-primary hover:to-yellow-700" disabled={isLoading}>
+                <Button type="submit" className="w-full bg-gradient-to-r from-brand-navy via-brand-blue to-brand-sky text-white font-bold shadow-lg hover:from-brand-blue hover:to-brand-navy" disabled={isLoading}>
                   {isLoading ? <Loader2 className="mr-2 h-4 w-4 animate-spin" /> : "Submit Application"}
                 </Button>
               </form>

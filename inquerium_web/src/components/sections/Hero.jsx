@@ -56,7 +56,7 @@ export default function Hero() {
                 transition={{ duration: 0.5, delay: 0.4 }}
                 className="inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-4"
               >
-                College Station's Premier Lead Generation
+                Comprehensive Logistics Solutions
               </motion.div>
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
@@ -64,7 +64,7 @@ export default function Hero() {
                 transition={{ duration: 0.5, delay: 0.6 }}
                 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight"
               >
-                Transforming How Businesses <span className="text-primary">Connect</span> With Customers
+                Streamlining Your Business <span className="text-primary">Operations</span> From End to End
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
@@ -72,8 +72,8 @@ export default function Hero() {
                 transition={{ duration: 0.5, delay: 0.8 }}
                 className="mt-4 text-xl text-muted-foreground max-w-lg"
               >
-                Inquerium connects businesses with their ideal customers through innovative lead generation strategies
-                powered by top talent.
+                Inquerium is your strategic logistics partner, helping businesses find clients, negotiate with manufacturers, 
+                create new revenue streams, develop comprehensive strategies, and optimize operations for maximum efficiency and growth.
               </motion.p>
             </div>
 

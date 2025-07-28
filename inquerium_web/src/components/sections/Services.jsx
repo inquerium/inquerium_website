@@ -2,39 +2,59 @@
 
 import { Card, CardContent } from "../ui/card"
 import { motion } from "framer-motion"
-import { BarChart3, FileText, Filter, Search, Database, LineChart } from "lucide-react"
+import { Users, Building2, DollarSign, Database, Globe, Calculator, Truck, Target, TrendingUp, Lightbulb } from "lucide-react"
 
 export default function Services() {
   const services = [
     {
-      title: "Digital Marketing",
-      description: "Strategic campaigns that target your ideal customers across digital platforms.",
-      icon: <BarChart3 className="h-6 w-6" />,
+      title: "Client Acquisition",
+      description: "Strategic client finding and relationship building to expand your customer base and market reach.",
+      icon: <Users className="h-6 w-6" />,
     },
     {
-      title: "Content Strategy",
-      description: "Compelling content that attracts and engages your target audience.",
-      icon: <FileText className="h-6 w-6" />,
+      title: "Manufacturer Relations",
+      description: "Connect with reliable manufacturers and establish strong partnerships for your supply chain needs.",
+      icon: <Building2 className="h-6 w-6" />,
     },
     {
-      title: "Lead Qualification",
-      description: "Advanced filtering to ensure you only receive high-quality, conversion-ready leads.",
-      icon: <Filter className="h-6 w-6" />,
+      title: "Price Negotiation",
+      description: "Expert negotiation with manufacturers to secure the best pricing and terms for your business.",
+      icon: <DollarSign className="h-6 w-6" />,
     },
     {
-      title: "Market Research",
-      description: "In-depth analysis to identify untapped opportunities in your market.",
-      icon: <Search className="h-6 w-6" />,
+      title: "Revenue Streams",
+      description: "Expert creation of new revenue streams and diversification strategies to maximize your business growth potential.",
+      icon: <TrendingUp className="h-6 w-6" />,
     },
     {
-      title: "CRM Integration",
-      description: "Seamless integration with your existing systems for efficient lead management.",
+      title: "Strategic Planning",
+      description: "Comprehensive business strategy development to optimize operations, market positioning, and long-term growth.",
+      icon: <Lightbulb className="h-6 w-6" />,
+    },
+    {
+      title: "CRM Development",
+      description: "Custom CRM systems designed to streamline your customer relationships and sales processes.",
       icon: <Database className="h-6 w-6" />,
     },
     {
-      title: "Analytics & Reporting",
-      description: "Comprehensive insights to measure and optimize your lead generation efforts.",
-      icon: <LineChart className="h-6 w-6" />,
+      title: "Digital Presence",
+      description: "Complete digital transformation including websites, e-commerce platforms, and online marketing strategies.",
+      icon: <Globe className="h-6 w-6" />,
+    },
+    {
+      title: "Cost Analysis",
+      description: "Comprehensive cost analysis and optimization strategies to maximize your profit margins.",
+      icon: <Calculator className="h-6 w-6" />,
+    },
+    {
+      title: "Logistical Operations",
+      description: "End-to-end logistics management including shipping, warehousing, and supply chain optimization.",
+      icon: <Truck className="h-6 w-6" />,
+    },
+    {
+      title: "Product Sales",
+      description: "Strategic product sales support and market penetration strategies across various channels.",
+      icon: <Target className="h-6 w-6" />,
     },
   ]
 
@@ -67,10 +87,11 @@ export default function Services() {
             Our Services
           </div>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            Comprehensive Lead Generation Solutions
+            Comprehensive Logistics & Business Solutions
           </h2>
           <p className="text-muted-foreground text-lg">
-            We deliver tailored strategies to help businesses connect with their ideal customers and drive growth.
+            We provide end-to-end logistics support and strategic business solutions to help businesses optimize operations, 
+            create new revenue streams, and accelerate growth.
           </p>
         </motion.div>
 
@@ -79,7 +100,7 @@ export default function Services() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8"
         >
           {services.map((service, index) => (
             <motion.div key={index} variants={itemVariants}>

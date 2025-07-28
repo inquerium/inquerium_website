@@ -20,18 +20,18 @@ export default function About() {
               About Inquerium
             </div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
-              College Station's Premier Lead Generation Company
+              Your Strategic Logistics Partner
             </h2>
             <div className="space-y-4">
               <p className="text-muted-foreground text-lg">
-                Founded in College Station, Inquerium has quickly established itself as the leading force in innovative
-                lead generation. Our unique advantage comes from our deep connections to the vibrant entrepreneurial and
-                technological ecosystem of College Station.
+                Founded in College Station, Inquerium has established itself as a comprehensive logistics corporation 
+                that helps businesses optimize their operations from end to end. We specialize in connecting businesses 
+                with clients, manufacturers, and strategic partners.
               </p>
               <p className="text-muted-foreground text-lg">
-                With access to exceptional talent and cutting-edge methodologies, we deliver results that consistently
-                exceed expectations. Our team combines industry expertise with fresh perspectives to create lead
-                generation strategies that truly work.
+                Our expertise spans client acquisition, manufacturer negotiations, revenue stream creation, strategic planning, 
+                CRM development, digital presence creation, cost analysis, and logistical operations. We deliver measurable 
+                results that drive business growth and operational efficiency.
               </p>
             </div>
             <div className="pt-4 flex flex-wrap gap-4">
@@ -60,12 +60,12 @@ export default function About() {
             <div className="absolute -bottom-6 -right-6 bg-background rounded-lg shadow-lg p-6 z-20">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-primary">100%</p>
-                  <p className="text-sm text-muted-foreground">Client Retention</p>
+                  <p className="text-3xl font-bold text-primary">95%</p>
+                  <p className="text-sm text-muted-foreground">Cost Reduction</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-primary">1M+</p>
-                  <p className="text-sm text-muted-foreground">Contacts Served</p>
+                  <p className="text-3xl font-bold text-primary">500+</p>
+                  <p className="text-sm text-muted-foreground">Partnerships</p>
                 </div>
               </div>
             </div>

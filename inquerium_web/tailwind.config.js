@@ -10,6 +10,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        'header': ['Helvetica Neue LT Pro', 'Helvetica Neue', 'Helvetica', 'Arial', 'sans-serif'],
+        'body': ['Roboto', 'sans-serif'],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -44,6 +48,10 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        // Brand colors
+        'brand-navy': '#242D54',
+        'brand-blue': '#415E99',
+        'brand-sky': '#9CC4E8',
       },
       borderRadius: {
         lg: "var(--radius)",

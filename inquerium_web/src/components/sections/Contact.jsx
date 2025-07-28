@@ -83,10 +83,10 @@ export default function Contact() {
             Contact Us
           </div>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            Ready to Transform Your Lead Generation?
+            Ready to Optimize Your Business Operations?
           </h2>
           <p className="text-muted-foreground text-lg">
-            Get in touch with our team to discuss how Inquerium can help your business grow.
+            Get in touch with our team to discuss how Inquerium can streamline your logistics and drive operational efficiency.
           </p>
         </motion.div>
 
@@ -268,7 +268,7 @@ export default function Contact() {
               <div className="relative z-10">
                 <h3 className="text-xl font-bold mb-2">Ready to get started?</h3>
                 <p className="text-muted-foreground mb-4">
-                  Schedule a free consultation to discuss your lead generation needs.
+                  Schedule a free consultation to discuss your logistics and operational needs.
                 </p>
                 <a
                   href="https://calendly.com/team-inquerium/30min"

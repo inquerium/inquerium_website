@@ -23,7 +23,7 @@ export default function Home() {
     const timer = setTimeout(() => {
       toast({
         title: "Welcome to Inquerium",
-        description: "College Station's premier lead generation company",
+        description: "Aggie Owned and Operated, Proven Logistics and Marketing Solutions",
         duration: 5000,
       })
     }, 2000)
@@ -56,9 +56,7 @@ export default function Home() {
                 <a href="https://lonebullusa.com/" target="_blank" rel="noopener noreferrer" className="text-primary underline font-semibold text-lg">Visit Website</a>
                 <a href="https://instagram.com/lonebullusa" target="_blank" rel="noopener noreferrer" className="text-primary underline font-semibold text-lg">Instagram @lonebullusa</a>
               </div>
-              <div className="mt-8 w-full h-48 bg-primary/10 border-2 border-dashed border-primary rounded-xl flex items-center justify-center text-primary-foreground text-lg font-medium">
-                [Video testimonial coming soon]
-              </div>
+    
             </div>
           </div>
         </section>

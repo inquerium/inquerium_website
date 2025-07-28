@@ -6,11 +6,12 @@ import AggielandImg from "../../assets/aggiescreate.png"
 
 export default function Advantage() {
   const advantages = [
-    "Technical expertise that identifies qualified leads with precision",
-    "Relationship-building skills that convert leads into lasting partnerships",
-    "Access to innovative thinkers and problem solvers",
-    "Boots-on-the-ground approach combined with data-driven strategies",
-    "Deep understanding of industry-specific lead generation challenges",
+    "Strategic partnerships with manufacturers and suppliers across industries",
+    "Comprehensive logistics solutions that optimize your entire supply chain",
+    "Expert negotiation skills that secure the best pricing and terms",
+    "Data-driven cost analysis that maximizes your profit margins",
+    "End-to-end digital transformation and CRM development expertise",
+    "Proven expertise in creating new revenue streams and business diversification strategies",
   ]
 
   return (
@@ -28,11 +29,11 @@ export default function Advantage() {
               Our Advantage
             </div>
             <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-6">
-              The Perfect Blend of Technology and Human Connection
+              The Perfect Blend of Strategic Partnerships and Operational Excellence
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
-              What sets Inquerium apart is our unique approach that combines advanced technical solutions with
-              personalized outreach, powered by College Station's best talent.
+              What sets Inquerium apart is our comprehensive approach that combines strategic manufacturer relationships 
+              with operational efficiency, powered by deep industry expertise and innovative logistics solutions.
             </p>
 
             <ul className="space-y-4">
@@ -80,8 +81,8 @@ export default function Advantage() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-semibold">Data-Driven</p>
-                    <p className="text-xs text-muted-foreground">Precision targeting</p>
+                    <p className="font-semibold">Strategic</p>
+                    <p className="text-xs text-muted-foreground">Partnership focused</p>
                   </div>
                 </div>
               </div>
@@ -121,8 +122,8 @@ export default function Advantage() {
                     </svg>
                   </div>
                   <div>
-                    <p className="font-semibold">Human Touch</p>
-                    <p className="text-xs text-muted-foreground">Relationship focused</p>
+                    <p className="font-semibold">Operational</p>
+                    <p className="text-xs text-muted-foreground">Efficiency driven</p>
                   </div>
                 </div>
               </div>
