@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import { Linkedin, Twitter, Mail, Instagram } from "lucide-react"
 import Avik from "../../assets/avik_headshot.png"
 import Zach from "../../assets/zach_headshot.jpeg"
-import Jason from "../../assets/jason_headshot.png"
+import Jason from "../../assets/jason_headshot.jpeg"
 
 export default function Team() {
   const founders = [
