@@ -5,14 +5,15 @@ import { motion } from "framer-motion"
 import { Linkedin, Twitter, Mail, Instagram } from "lucide-react"
 import Avik from "../../assets/avik_headshot.png"
 import Zach from "../../assets/zach_headshot.jpeg"
+import Jason from "../../assets/jason_headshot.png"
 
 export default function Team() {
   const founders = [
     {
       name: "Avik Khadayat",
-      role: "Co-Founder & CEO",
+      role: "Partner",
       image: Avik,
-      bio: "A specialist in closing leads and building relationships, Avik brings his experience as a former team lead at Aggies Create to Inquerium. His talent for identifying opportunities and connecting with decision-makers drives our client acquisition strategy. As Supervisor at the McFerrin Center for Entrepreneurship, Avik continues to mentor the next generation of business leaders while applying those same principles to grow Inquerium.",
+      bio: "Avik drives revenue strategy and backend business ops, specializing in manufacturer negotiation, market positioning, and growth infrastructure. He identifies new income pathways for clients and helps architect the workflows that support them. Avik’s ability to align operations with opportunity makes him a key force in both strategy and execution.",
       social: {
         linkedin: "https://www.linkedin.com/in/avikkhadayat/",
         twitter: "#",
@@ -22,13 +23,25 @@ export default function Team() {
     },
     {
       name: "Zach Nowroozi",
-      role: "Co-Founder & CTO",
+      role: "Partner",
       image: Zach,
-      bio: "A technical expert in Python, JavaScript, and C++, Zach leads our data-driven approach to lead generation. His innovative programming solutions enable Inquerium to identify and qualify leads with unprecedented efficiency and accuracy. As Director of the Incubator at Aggies Create, Zach continues to foster innovation while developing cutting-edge technologies that keep Inquerium at the forefront of the industry.",
+      bio: "Zach leads Inquerium’s outreach innovation and technical execution—engineering the systems that fuel client growth. From automated lead funnels to AI-powered tools, he oversees the development of scalable platforms that unlock new revenue streams. Zach also directs our high-performance outreach campaigns, ensuring clients reach the right people with precision and speed.",
       social: {
         linkedin: "https://www.linkedin.com/in/zachary-nowroozi-84b498308/",
         twitter: "#",
         instagram: "https://instagram.com/zacharynowroozi",
+        email: "mailto:team@inquerium.com",
+      },
+    },
+    {
+      name: "Jason Wisnieski",
+      role: "Partner",
+      image: Jason,
+      bio: "Jason leads relationship strategy and CRM design, ensuring every lead, client, and conversation drives meaningful growth. With a focus on high-leverage partnerships and streamlined pipelines, he builds the systems that convert contacts into customers. Jason’s strength is turning connections into scalable business outcomes.",
+      social: {
+        linkedin: "https://www.linkedin.com/in/jason-w-7584a3199/",
+        twitter: "#",
+        instagram: "https://www.instagram.com/jasonwisnieski/?hl=en",
         email: "mailto:team@inquerium.com",
       },
     },
@@ -64,7 +77,7 @@ export default function Team() {
           </div>
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">Meet Our Founders</h2>
           <p className="text-muted-foreground text-lg">
-            Visionary leaders who combined their unique strengths to revolutionize lead generation.
+            Visionary leaders who combined their unique strengths to revolutionize business operations.
           </p>
         </motion.div>
 
@@ -73,7 +86,7 @@ export default function Team() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 gap-12"
+          className="grid grid-cols-1 md:grid-cols-3 gap-12"
         >
           {founders.map((founder, index) => (
             <motion.div key={index} variants={itemVariants}>
