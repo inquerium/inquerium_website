@@ -6,6 +6,7 @@ import { Linkedin, Twitter, Mail } from "lucide-react"
 import Bijan from "../../assets/Bijan_headshot.png"
 import Bradford from "../../assets/bradford_headshot.png"
 import Longo from "../../assets/longo_headshot.png"
+import Ben from "../../assets/ben_headshot.png"
 
 export default function Advisors() {
   const advisors = [
@@ -18,6 +19,17 @@ export default function Advisors() {
         linkedin: "#",
         twitter: "#",
         email: "mailto:bijan@example.com",
+      },
+    },
+    {
+      name: "Ben Terrell",
+      role: "Marketing Advisor",
+      image: Ben,
+      bio: "Ben is an award-winning filmmaker and creative strategist advising Inquerium’s marketing, content, and brand direction. With a sharp eye for storytelling and audience psychology, he brings cinematic quality to our video campaigns and outreach assets. His most recent documentary garnered over 36,000 views in just five days on YouTube—testament to his ability to craft narratives that resonate and perform. At Inquerium, Ben ensures our visual presence matches the quality and ambition of the systems we build.",
+      social: {
+        linkedin: "https://www.linkedin.com/in/john-benjamin-terrell-94a21b292/",
+        twitter: "#",
+        email: "mailto:jbenterrell@yahoo.com",
       },
     },
     {
@@ -83,7 +95,7 @@ export default function Advisors() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           {advisors.map((advisor, index) => (
             <motion.div key={index} variants={itemVariants}>

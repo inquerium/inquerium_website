@@ -12,7 +12,7 @@ import HeroAnimation from "./HeroAnimation"
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center pt-16 overflow-hidden">
+    <section className="relative min-h-screen flex items-center pt-16 overflow-hidden hero-section-mobile">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background to-muted -z-10"></div>
 
@@ -41,8 +41,8 @@ export default function Hero() {
         ))}
       </div>
 
-      <div className="container mx-auto px-4">
-        <div className="grid gap-12 lg:grid-cols-2 items-center">
+      <div className="container mx-auto px-4 hero-container-mobile">
+        <div className="grid gap-12 lg:grid-cols-2 items-center hero-spacing-mobile">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -54,7 +54,7 @@ export default function Hero() {
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5, delay: 0.4 }}
-                className="inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-4"
+                className="inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-4 hero-badge-mobile"
               >
                 Comprehensive Logistics Solutions
               </motion.div>
@@ -62,7 +62,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.6 }}
-                className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight"
+                className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight leading-tight hero-title-mobile"
               >
                 Streamlining Your Business <span className="text-primary">Operations</span> From End to End
               </motion.h1>
@@ -70,7 +70,7 @@ export default function Hero() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.8 }}
-                className="mt-4 text-xl text-muted-foreground max-w-lg"
+                className="mt-4 text-xl text-muted-foreground max-w-lg hero-subtitle-mobile"
               >
                 Inquerium is your strategic logistics partner, helping businesses find clients, negotiate with manufacturers, 
                 create new revenue streams, develop comprehensive strategies, and optimize operations for maximum efficiency and growth.
@@ -81,33 +81,33 @@ export default function Hero() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 1 }}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col sm:flex-row gap-4 button-group-mobile"
             >
-              <a
-                href="https://calendly.com/team-inquerium/30min"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8 font-medium"
-              >
-                Schedule a Consultation
-              </a>
-              <a
-                href="#about"
-                className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-8 font-medium bg-background text-foreground"
-              >
-                Learn More
-              </a>
+                              <a
+                  href="https://calendly.com/team-inquerium/30min"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 bg-primary text-primary-foreground hover:bg-primary/90 h-11 rounded-md px-8 font-medium hero-button-mobile button-mobile"
+                >
+                  Schedule a Consultation
+                </a>
+                              <a
+                  href="#about"
+                  className="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 border border-input hover:bg-accent hover:text-accent-foreground h-11 rounded-md px-8 font-medium bg-background text-foreground hero-button-mobile button-mobile"
+                >
+                  Learn More
+                </a>
             </motion.div>
 
             <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5, delay: 1.2 }}
-              className="flex items-center gap-4 pt-4"
+              className="flex items-center gap-4 pt-4 client-logos-mobile"
             >
               <div className="flex -space-x-2">
                 {[lonebullImg, dtxImg, trailheadImg, valiantImg].map((img, i) => (
-                  <div key={i} className="h-10 w-10 rounded-full border-2 border-background bg-muted overflow-hidden">
+                  <div key={i} className="h-10 w-10 rounded-full border-2 border-background bg-muted overflow-hidden client-logo-mobile">
                     <img
                       src={img || "/placeholder.svg"}
                       alt="Client"
@@ -118,7 +118,7 @@ export default function Hero() {
                   </div>
                 ))}
               </div>
-              <div className="text-sm">
+              <div className="text-sm client-text-mobile">
                 <p className="font-medium">Trusted by businesses</p>
                 <p className="text-muted-foreground">across Texas</p>
               </div>
@@ -129,7 +129,7 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative flex items-center justify-center"
+            className="relative flex items-center justify-center hero-animation-mobile"
           >
             <HeroAnimation />
           </motion.div>

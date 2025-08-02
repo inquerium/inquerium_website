@@ -8,7 +8,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="w-full border-t bg-background">
+    <footer className="w-full border-t bg-background footer-mobile">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
@@ -17,7 +17,7 @@ export default function Footer() {
               <span className="text-xl font-bold">Inquerium</span>
             </div>
             <p className="text-muted-foreground">
-              Transforming lead generation through innovative strategies and top talent.
+              Transforming operations through innovative strategies and top talent.
             </p>
             <div className="flex space-x-4">
                 {/*<Twitter size={20} />

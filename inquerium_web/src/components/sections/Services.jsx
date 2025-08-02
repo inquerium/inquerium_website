@@ -74,8 +74,8 @@ export default function Services() {
   }
 
   return (
-    <section id="services" className="py-20 bg-background">
-      <div className="container mx-auto px-4">
+    <section id="services" className="py-20 bg-background section-mobile">
+      <div className="container mx-auto px-4 section-container-mobile">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -86,10 +86,10 @@ export default function Services() {
           <div className="inline-block rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary mb-4">
             Our Services
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4 text-xl-mobile">
             Comprehensive Logistics & Business Solutions
           </h2>
-          <p className="text-muted-foreground text-lg">
+          <p className="text-muted-foreground text-lg text-base-mobile">
             We provide end-to-end logistics support and strategic business solutions to help businesses optimize operations, 
             create new revenue streams, and accelerate growth.
           </p>
@@ -100,15 +100,15 @@ export default function Services() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8"
+          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 grid-mobile"
         >
           {services.map((service, index) => (
             <motion.div key={index} variants={itemVariants}>
-              <Card className="h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
-                <CardContent className="p-6 flex flex-col items-center text-center h-full">
+              <Card className="h-full transition-all duration-300 hover:shadow-lg hover:-translate-y-1 card-mobile">
+                <CardContent className="p-6 flex flex-col items-center text-center h-full card-mobile">
                   <div className="rounded-full bg-primary/10 p-3 mb-4">{service.icon}</div>
-                  <h3 className="text-xl font-bold mb-2">{service.title}</h3>
-                  <p className="text-muted-foreground">{service.description}</p>
+                  <h3 className="text-xl font-bold mb-2 card-title-mobile">{service.title}</h3>
+                  <p className="text-muted-foreground card-text-mobile">{service.description}</p>
                 </CardContent>
               </Card>
             </motion.div>

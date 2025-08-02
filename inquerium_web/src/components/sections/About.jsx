@@ -6,9 +6,9 @@ import AggieLandImg from "../../assets/aggieland.jpeg"
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-muted">
-      <div className="container mx-auto px-4">
-        <div className="grid gap-12 lg:grid-cols-2 items-center">
+    <section id="about" className="py-20 bg-muted section-mobile">
+      <div className="container mx-auto px-4 section-container-mobile">
+        <div className="grid gap-12 lg:grid-cols-2 items-center grid-mobile">
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -19,26 +19,26 @@ export default function About() {
             <div className="inline-block rounded-full bg-background px-4 py-1.5 text-sm font-medium text-primary">
               About Inquerium
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold tracking-tight">
+            <h2 className="text-3xl md:text-4xl font-bold tracking-tight text-xl-mobile">
               Your Strategic Logistics Partner
             </h2>
             <div className="space-y-4">
-              <p className="text-muted-foreground text-lg">
+              <p className="text-muted-foreground text-lg text-base-mobile">
                 Founded in College Station, Inquerium has established itself as a comprehensive logistics corporation 
                 that helps businesses optimize their operations from end to end. We specialize in connecting businesses 
                 with clients, manufacturers, and strategic partners.
               </p>
-              <p className="text-muted-foreground text-lg">
+              <p className="text-muted-foreground text-lg text-base-mobile">
                 Our expertise spans client acquisition, manufacturer negotiations, revenue stream creation, strategic planning, 
                 CRM development, digital presence creation, cost analysis, and logistical operations. We deliver measurable 
                 results that drive business growth and operational efficiency.
               </p>
             </div>
-            <div className="pt-4 flex flex-wrap gap-4">
-              <Button variant="default" size="lg">
+            <div className="pt-4 flex flex-wrap gap-4 button-group-mobile">
+              <Button variant="default" size="lg" className="button-mobile">
                 Our Approach
               </Button>
-              <Button variant="outline" size="lg" className="bg-background text-foreground" asChild>
+              <Button variant="outline" size="lg" className="bg-background text-foreground button-mobile" asChild>
                 <a href="#story">Learn More</a>
               </Button>
             </div>
@@ -51,21 +51,21 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+            <div className="relative rounded-2xl overflow-hidden shadow-xl image-mobile">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent z-10"></div>
               <img src={AggieLandImg} />
             </div>
 
             {/* Stats overlay */}
-            <div className="absolute -bottom-6 -right-6 bg-background rounded-lg shadow-lg p-6 z-20">
+            <div className="absolute -bottom-6 -right-6 bg-background rounded-lg shadow-lg p-6 z-20 stats-mobile">
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-primary">95%</p>
-                  <p className="text-sm text-muted-foreground">Cost Reduction</p>
+                  <p className="text-3xl font-bold text-primary stats-number-mobile">95%</p>
+                  <p className="text-sm text-muted-foreground stats-label-mobile">Cost Reduction</p>
                 </div>
                 <div className="text-center">
-                  <p className="text-3xl font-bold text-primary">500+</p>
-                  <p className="text-sm text-muted-foreground">Partnerships</p>
+                  <p className="text-3xl font-bold text-primary stats-number-mobile">500+</p>
+                  <p className="text-sm text-muted-foreground stats-label-mobile">Partnerships</p>
                 </div>
               </div>
             </div>

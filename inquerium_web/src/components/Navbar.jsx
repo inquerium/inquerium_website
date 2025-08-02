@@ -29,12 +29,24 @@ export default function Navbar() {
   const { theme, setTheme } = useTheme()
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const location = useLocation();
   const navigate = useNavigate();
   const dropdownRef = useRef(null);
 
   const toggleMenu = () => setMobileOpen(!mobileOpen)
   const closeMenu = () => setMobileOpen(false)
+
+  // Scroll detection for navbar
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      setIsScrolled(scrollTop > 10);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   // Click outside handler for dropdown
   useEffect(() => {
@@ -76,10 +88,10 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed top-0 z-50 w-full bg-background/90 backdrop-blur-sm shadow-md transition-colors duration-300">
+    <header className={`fixed top-0 z-50 w-full bg-background/90 backdrop-blur-sm shadow-md transition-colors duration-300 navbar-mobile ${isScrolled ? 'scrolled' : ''}`}>
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link to="/" className="flex items-center gap-2">
-          <img src={InqueriumLogo} alt="Inquerium Logo" className="h-10 w-auto" />
+          <img src={InqueriumLogo} alt="Inquerium Logo" className="h-10 w-auto navbar-logo-mobile" />
           {/*<span className="text-xl font-extrabold tracking-tight text-foreground">Inquerium</span>*/}
         </Link>
         <nav className="hidden md:flex gap-6 items-center">
@@ -136,7 +148,7 @@ export default function Navbar() {
             variant="ghost"
             size="icon"
             onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
-            className="mr-2"
+            className="mr-2 navbar-theme-toggle-mobile"
           >
             {theme === "dark" ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
             <span className="sr-only">Toggle theme</span>
@@ -156,9 +168,9 @@ export default function Navbar() {
                 Get Started
               </a>
             </motion.div>
-          <button className="md:hidden p-2" onClick={toggleMenu}>
+                                <button className="md:hidden p-2" onClick={toggleMenu}>
             <span className="sr-only">Toggle menu</span>
-            <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg>
+            <svg width="28" height="28" fill="none" viewBox="0 0 24 24"><path d="M2 6h20M2 12h20M2 18h20" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg>
           </button>
         </div>
       </div>
@@ -169,14 +181,14 @@ export default function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.25, ease: 'easeOut' }}
-            className="md:hidden bg-card border-t"
+            className="md:hidden bg-card border-t navbar-menu-mobile"
           >
             {[...mainLinks, ...moreLinks].map(link => (
               <NavLink
                 key={link.name}
                 to={link.to}
                 className={({ isActive }) =>
-                  `block text-lg font-semibold py-2 transition-colors ${isActive ? 'text-primary' : 'text-muted-foreground hover:text-primary'}`
+                  `block text-lg font-semibold py-2 transition-colors navbar-menu-item-mobile ${isActive ? 'text-primary' : 'text-muted-foreground hover:text-primary'}`
                 }
                 onClick={handleNav(link.to, closeMenu)}
               >
